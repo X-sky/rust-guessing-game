@@ -22,7 +22,11 @@ fn main() {
 
         // tip1. Rust allows to shadow the previous value of `guess` with a new one instead of creating two unique variables.
         // tip2. By using `: u32`, we tell Rust exactly what type we want, and Rust will convert String to another type with `parse()`
-        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        // tip3. add keyword `match` and arms to handle the Result type returned by parse
+        let guess: u32 = match guess.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
         // "crab pincers{}" to hold a value
         println!("You guessed: {guess}");
 
