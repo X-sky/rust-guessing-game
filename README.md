@@ -1,1 +1,1 @@
-Code snippets of [Rust Starter Book](https://doc.rust-lang.org/book/title-page.html)
+Code snippets of [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)
