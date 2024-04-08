@@ -1,0 +1,3 @@
+{
+  "rust-analyzer.linkedProjects": [".\\mandelbrot\\Cargo.toml"]
+}
